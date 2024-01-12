@@ -1,8 +1,9 @@
 import traceback
+
 from PyQt5.QtCore import QTimer, Qt
 from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import QMainWindow, QPushButton, QLabel, QVBoxLayout, QWidget, QMessageBox, QTextEdit, QHBoxLayout, \
-    QProgressBar, QMenu, QAction, QDesktopWidget, QApplication
+    QProgressBar, QMenu, QAction, QApplication
 
 from building_manager import BuildingManager, ResourceExtractor, PowerPlant, Farm
 from population import Population
@@ -164,7 +165,7 @@ class GalacticPioneers(QMainWindow):
 
     def build_miner(self):
         miner_cost = 100
-        miner_output = ResourceExtractor('minerals', 5)  # Example generation rate
+        miner_output = ResourceExtractor('minerals', 5)
         if self.resourceManager.spend_resource('minerals', miner_cost):
             self.buildingManager.add_extractor(miner_output)
             self.eventLog.append("Miner built.")

@@ -15,7 +15,7 @@ class GameOverScreen(QMainWindow):
         self.setCentralWidget(centralWidget)
         layout = QVBoxLayout(centralWidget)
 
-        gameOverLabel = QLabel('Game Over! Redirecting to main screen...')
+        gameOverLabel = QLabel('Game Over!')
         gameOverLabel.setAlignment(Qt.AlignCenter)
         layout.addWidget(gameOverLabel)
 

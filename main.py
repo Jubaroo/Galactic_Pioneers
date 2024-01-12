@@ -37,8 +37,6 @@ class StartScreen(QMainWindow):
         startButton.clicked.connect(self.start_game)
         layout.addWidget(startButton)
 
-        # Add more buttons for options/settings here if needed
-
         exitButton = QPushButton('Exit')
         exitButton.clicked.connect(self.close)
         layout.addWidget(exitButton)
@@ -85,7 +83,8 @@ class GameOverScreen(QMainWindow):
     def redirect_to_start(self):
         self.close()
         global ex
-        ex = StartScreen()  # Assuming StartScreen is defined as before
+        ex = StartScreen()
+
 
 # Modify the main function
 def main():

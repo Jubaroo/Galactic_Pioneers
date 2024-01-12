@@ -73,4 +73,5 @@ class ResourceManager:
             error_message = f"Error during resource update: {str(e)}"
             print(error_message)
             traceback.print_exc()
-            log_event(error_message)  # Log the error using the passed function
+            # Log the error using the passed function
+            log_event(error_message)

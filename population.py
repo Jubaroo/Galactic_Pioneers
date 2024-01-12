@@ -14,7 +14,7 @@ class Population:
         # Decrease the population size by the shrink rate due to lack of food
         # Ensure that the population does not go below a certain threshold, for example, 1
         if self.size > 1:
-            self.size -= 1  # You can adjust the shrink amount or rate as needed
+            self.size -= 1  # Adjust the shrink amount or rate as needed
         self.size = max(self.size, 1)  # Prevent population from going below 1
 
     def consume_food(self):
